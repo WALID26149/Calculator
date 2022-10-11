@@ -12,6 +12,7 @@ btns.map( btn => {
           if (screenResulte.innerText) {
             screenResulte.innerText = screenResulte.innerText.slice(0, -1);
           }
+          break;
           case '=':
             try {
               screenResulte.innerText = eval(screenResulte.innerText);
