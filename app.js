@@ -9,6 +9,9 @@ app.use(express.static('public'));
 app.get("/", function(req, res) {
   res.sendFile(__dirname + "/index.html");
 });
+app.post("/", function(req, res) {
+  res.sendFile(__dirname + "/index.html")
+})
 
 app.listen(process.env.PORT || 5000, function() {
   console.log("server is running");
