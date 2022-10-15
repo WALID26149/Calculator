@@ -13,7 +13,7 @@ app.post("/", function(req, res) {
   res.sendFile(__dirname + "/index.html")
 });
 
-app.get('public/calculator.png', function(req, res) {
+app.get('calculator.png', function(req, res) {
   res.sendFile(__dirname + "/calculator.png")
 });
 
