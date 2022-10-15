@@ -11,7 +11,11 @@ app.get("/", function(req, res) {
 });
 app.post("/", function(req, res) {
   res.sendFile(__dirname + "/index.html")
-})
+});
+
+app.get('/calculator.png', function(req, res) {
+  res.sendFile(__dirname + "/calculator.png")
+});
 
 app.listen(process.env.PORT || 5000, function() {
   console.log("server is running");
